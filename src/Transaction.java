@@ -1,16 +1,19 @@
 public class Transaction {
-    private String type; // 수입 or 지출
-    private String category;
+    private String description;
     private int amount;
 
-    public Transaction(String type, String category, int amount){
-        this.type = type;
-        this.category = category;
+    // 생성자
+    public Transaction(String description, int amount){
+        this.description = description;
         this.amount = amount;
     }
 
-    @Override
-    public String toString(){
-        return type + " - " + category + " : " + amount + "원";
+    // getter 메서드
+    public String getDescription(){
+        return description;
+    }
+
+    public int getAmount(){
+        return amount;
     }
 }
