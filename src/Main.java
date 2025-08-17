@@ -31,7 +31,6 @@ public class Main {
                 System.out.println("잘못된 입력입니다. 다시 선택해주세요.");
             }
         }
-
         scanner.close();
     }
 }
